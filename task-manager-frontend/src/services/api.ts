@@ -1,4 +1,6 @@
-const BASE_URL = "http://localhost:5051";
+// const BASE_URL = "http://localhost:5051";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL!;
+
 
 export const api = async (
   endpoint: string,
