@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./",
+    "outDir": "./dist",
+
+    /* Environment Settings */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ESNext",
+    "types": ["node"],
+    "esModuleInterop": true,
+
+    /* Other Outputs - Isse kachra files banna band ho jayengi */
+    "sourceMap": false,
+    "declaration": false,
+    "declarationMap": false,
+
+    /* Stricter Typechecking */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false, // Ise false rakhein taaki Prisma filters mein error na aaye
+
+    /* Style & Recommended Options */
+    "skipLibCheck": true,
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": false, // Ise false karein agar imports mein problem aaye
+    "isolatedModules": true
+  },
+  "include": ["src/**/*","prisma.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
