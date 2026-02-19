@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { api } from "@/services/api";
 import { saveTokens } from "@/lib/auth";
 import toast from "react-hot-toast";
-
+import Link from "next/link";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -58,6 +58,17 @@ export default function Login() {
         >
           Login
         </button>
+        <div className="text-center mt-4">
+          <p className="text-sm text-gray-600">
+            Don’t have an account?{" "}
+            <Link
+              href="/register"
+              className="text-blue-600 font-semibold hover:underline"
+            >
+              Register
+            </Link>
+          </p>
+        </div>
       </form>
     </div>
   );
