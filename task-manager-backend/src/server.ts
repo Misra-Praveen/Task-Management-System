@@ -6,8 +6,7 @@ import authRoute from "./routes/authRoutes.js"
 import taskRouter from "./routes/taskRoutes.js";
 
 
-const PORT = 5051;
-
+const PORT = process.env.PORT || 5051;
 
 const app = express();
 app.use(cors());
